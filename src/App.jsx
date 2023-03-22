@@ -1,14 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import React from "react";
+import Layout from "./components/Layout/Layout";
 
-function App() {
-    return (
-        <div className="App">
-            <Routes>
-                <Home title="Home" />
-            </Routes>
-        </div>
-    );
-}
+const App = () => {
+    return <Layout />;
+};
 
 export default App;
