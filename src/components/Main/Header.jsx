@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const Header = () => {
     return (
@@ -18,17 +19,17 @@ const Header = () => {
 
                 <div className="flex items-center gap-4 ">
                     <div className="flex gap-1 items-center">
-                        <i className="ri-login-box-line text-xl"></i>
+                        <i className="ri-login-box-line text-xl cursor-pointer hover:scale-[1.2] duration-500"></i>
                         <span>Login</span>
                     </div>
                     <div className="flex gap-1 items-center">
-                        <i className="ri-user-2-line"></i>
+                        <i className="ri-user-line cursor-pointer hover:scale-[1.2] duration-500"></i>
                         <span>Register</span>
                     </div>
                 </div>
             </div>
 
-            <div className="gap-2 items-center text-emerald-700 flex justify-evenly mt-4">
+            <div className="gap-2 items-center text-emerald-700 flex justify-evenly my-4">
                 <div className="flex items-center gap-2 font-bold ">
                     <i className="ri-car-line text-2xl"></i>
                     <h4 className="flex flex-col">
@@ -50,11 +51,23 @@ const Header = () => {
                     </h4>
                 </div>
 
-                <div className="flex items-center justify-between gap-4 bg-emerald-700 rounded-lg text-white">
+                <div className="flex items-center justify-between gap-2 bg-emerald-700 rounded-lg text-white p-2 hover:opacity-90">
                     <i className="ri-phone-line cursor-pointer"></i>
                     <span>Request A Call</span>
                 </div>
             </div>
+            <section className="flex items-center justify-between p-4 bg-emerald-700 text-white w-full">
+                <Navbar />
+                <div className="flex border-2 border-white rounded-2xl p-2">
+                    <i className="ri-search-line"></i>
+                    <input
+                        type="text"
+                        autoFocus
+                        placeholder="Search..."
+                        className=" px-2 bg-transparent text-white outline-none border-none placeholder:text-gray-200"
+                    />
+                </div>
+            </section>
         </header>
     );
 };

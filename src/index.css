@@ -5,3 +5,19 @@
 html {
     @apply scroll-smooth font-Poppins;
 }
+
+.btn {
+    @apply rounded-xl px-4 py-2 text-white bg-emerald-600 hover: opacity-90 border-none outline-none cursor-pointer;
+}
+
+.section-title {
+    @apply text-3xl text-emerald-600;
+}
+
+.section-subtitle {
+    @apply text-xl text-amber-700;
+}
+
+.section-info {
+    @apply text-md text-gray-600;
+}
